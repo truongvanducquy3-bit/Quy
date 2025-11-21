@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trang cá nhân của tôi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background: #1e88e5;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 10px;
+      font-size: 32px;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    nav {
+      background: #1565c0;
+      padding: 10px 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+
+    section {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    }
+
+    section h2 {
+      margin-top: 0;
+      font-size: 22px;
+      color: #1e88e5;
+    }
+
+    .intro {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .intro img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #1e88e5;
+    }
+
+    .intro-text {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 4px 8px;
+      margin: 3px;
+      border-radius: 4px;
+      background: #e3f2fd;
+      font-size: 13px;
+    }
+
+    .contact-links a {
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 8px;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 20px;
+      border: 1px solid #1e88e5;
+      color: #1e88e5;
+      font-size: 13px;
+    }
+
+    .contact-links a:hover {
+      background: #1e88e5;
+      color: #fff;
+    }
+
+    .back-to-top {
+      text-align: right;
+      font-size: 13px;
+      margin-top: 10px;
+    }
+
+    .back-to-top a {
+      text-decoration: none;
+      color: #1e88e5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 13px;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+<body id="top">
+  <!-- Thanh header -->
+  <header>
+    <h1>Tên của bạn</h1>
+    <p>Ví dụ: Sinh viên CNTT • Yêu thích mạng máy tính • Đang học Render & Static Site</p>
+  </header>
+
+  <!-- Menu điều hướng -->
+  <nav>
+    <a href="#gioi-thieu">Giới thiệu</a>
+    <a href="#ky-nang">Kỹ năng</a>
+    <a href="#du-an">Dự án / Mục tiêu</a>
+    <a href="#lien-he">Liên hệ</a>
+  </nav>
+
+  <div class="container">
+    <!-- Giới thiệu bản thân -->
+    <section id="gioi-thieu">
+      <h2>Giới thiệu</h2>
+      <div class="intro">
+        <!-- Nếu bạn có ảnh, đổi src thành link ảnh của bạn -->
+        <img src="https://via.placeholder.com/140" alt="Ảnh của tôi" />
+        <div class="intro-text">
+          <p>
+            Xin chào, mình là <strong>Tên của bạn</strong>.  
+            Hiện tại mình đang quan tâm đến <strong>mạng máy tính, Render, Static Site</strong> và muốn xây dựng
+            những website đơn giản để luyện tập.
+          </p>
+          <p>
+            Đây là trang cá nhân nhỏ để giới thiệu về bản thân, kỹ năng và cách liên hệ với mình.
+          </p>
+        </div>
+      </div>
+      <div class="back-to-top"><a href="#top">Lên đầu trang ↑</a></div>
+    </section>
+
+    <!-- Kỹ năng -->
+    <section id="ky-nang">
+      <h2>Kỹ năng</h2>
+      <p>Một vài kỹ năng hoặc lĩnh vực bạn đang học / quan tâm:</p>
+      <div>
+        <span class="tag">HTML / CSS cơ bản</span>
+        <span class="tag">Static Site</span>
+        <span class="tag">Render.com</span>
+        <span class="tag">Mạng máy tính</span>
+        <span class="tag">RIP / Routing</span>
+        <!-- Bạn có thể thêm/bớt tag -->
+      </div>
+      <ul>
+        <li>Đang luyện tập xây dựng website cá nhân, portfolio.</li>
+        <li>Quan tâm đến cách deploy website đơn giản, dễ dùng.</li>
+        <li>Mong muốn cải thiện kỹ năng lập trình web từng bước.</li>
+      </ul>
+      <div class="back-to-top"><a href="#top">Lên đầu trang ↑</a></div>
+    </section>
+
+    <!-- Dự án / Mục tiêu -->
+    <section id="du-an">
+      <h2>Dự án / Mục tiêu</h2>
+      <p>
+        Nếu bạn chưa có dự án, có thể ghi mục tiêu học tập / định hướng của mình:
+      </p>
+      <ul>
+        <li>Hoàn thành website cá nhân đơn giản và deploy lên Render.</li>
+        <li>Tìm hiểu thêm về backend (Node.js, Python, v.v.) khi đã quen frontend.</li>
+        <li>Xây dựng một vài trang demo về mạng máy tính, ghi chú học tập.</li>
+      </ul>
+      <div class="back-to-top"><a href="#top">Lên đầu trang ↑</a></div>
+    </section>
+
+    <!-- Liên hệ -->
+    <section id="lien-he">
+      <h2>Liên hệ</h2>
+      <p>Bạn có thể liên hệ với mình qua:</p>
+      <div class="contact-links">
+        <!-- Đổi email, số điện thoại, link Facebook/Zalo của bạn -->
+        <a href="mailto:you@example.com">Gửi email</a>
+        <a href="tel:+84901234567">Gọi điện</a>
+        <a href="https://facebook.com/" target="_blank">Facebook</a>
+        <a href="https://zalo.me/" target="_blank">Zalo</a>
+      </div>
+      <p>Nếu bạn muốn hợp tác, trao đổi học tập hoặc đơn giản là làm quen, cứ nhắn cho mình nhé.</p>
+      <div class="back-to-top"><a href="#top">Lên đầu trang ↑</a></div>
+    </section>
+  </div>
+
+  <footer>
+    © <span id="year"></span> Tên của bạn. All rights reserved.
+  </footer>
+
+  <script>
+    // Tự động cập nhật năm hiện tại ở footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
